@@ -68,12 +68,14 @@ void drawtext(float x,float y,char* s)
 }
 void display()
 {
+    	char number[50];
+    	sprintf(number,"Number of Divisions:%d",n);
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 	divideTetra(v[0],v[1],v[2],v[3],n);
 	drawtext(0.5,0.8,"3D Gasket");
-	drawtext(0.5,0.7,"1BI17CS015");
-	drawtext(0.5,0.6,"Anandteerth");
-	drawtext(0.5,0.5,"No. Of Divisions=2");
+	drawtext(0.5,0.7,"1BI17CS010");
+	drawtext(0.5,0.6,"Akash R");
+	drawtext(0.5,0.5,number);
 	glFlush();
 }
 
